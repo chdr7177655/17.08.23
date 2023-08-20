@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   
+    <title>3</title>
+</head>
+<body>
+    <body>
+        <input type="number" id="num1" placeholder="Enter the first number"><br>
+        <input type="number" id="num2" placeholder="Enter the second number"><br>
+        <button onclick="click_my()">Find Minimum</button>
+      
+        <script>
+          function findMinimum(num1, num2) {
+            return Math.min(num1, num2);
+          }
+      
+          function click_my() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var minimum = findMinimum(num1, num2);
+            alert("The minimum number is: " + minimum);
+          }
+       //   function findMinimum(num1= 3, num2 = -12) {
+       //     return Math.min(num1, num2);
+       //   }
+        </script>
+</body>
+</html>

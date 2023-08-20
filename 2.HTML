@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2</title>
+</head>
+<body>
+
+<h2>Number Loop</h2>
+
+<label for="startNum">Start Number:</label>
+<input type="number" id="startNum"><br>
+<br>
+<label for="endNum">End Number:</label>
+<input type="number" id="endNum"><br>
+<br>
+<label for="ZAKIF">Divisor:</label>
+<input type="number" id="ZAKIF"><br>
+<br>
+<label for="DILUG">Skip Number:</label>
+<input type="number" id="DILUG"><br>
+<br>
+<button onclick="myFunction()">Run Loop</button>
+
+<script>
+    function myFunction() {
+    var startNum = document.getElementById("startNum").value;
+    var endNum = document.getElementById("endNum").value;
+    var ZAKIF = document.getElementById("ZAKIF").value;
+    var DILUG = document.getElementById("DILUG").value;
+    
+    for (var i = startNum; i < endNum; i++ ) {
+    if (i % DILUG !== 0 ) {
+    document.write(i + "<br>");
+    }
+    if (i === ZAKIF) {
+    break;
+    }
+    }
+    }
+    </script>
+</body>
+</html>

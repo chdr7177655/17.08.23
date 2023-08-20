@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1</title>
+
+</head>
+
+declare module 'sweetalert2
+
+<body>
+   <script>
+var randomNumber = Math.floor(Math.random() * 100) + 1; 
+var guess;
+var counter = 0;
+
+while (true) {
+    guess = parseInt(prompt("נא לנחש מספר בין 1 ל-100"));
+
+    if (guess < 1 || guess > 100) {
+        continue;
+    }
+    counter++;
+
+    if (guess < randomNumber) {
+        alert ("נחש גבוה יותר");
+    } else if (guess > randomNumber) {
+       alert("נחש נמוך יותר");
+   } else {
+        alert("הידד! ניצחת");
+      break;
+    }
+
+//alert   (guess < randomNumber) ? "נחש גבוה יותר" ?  (guess > randomNumber ) ? "נחש נמוך יותר" : "הידד! ניצחת"
+  }
+
+</script>
+</body>
+</html>
